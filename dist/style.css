@@ -152,4 +152,3 @@ h2{font-size:clamp(58px,6.7vw,104px)}
 .hero-inset .photo-open img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:45% 43%}
 @media(max-width:1050px) and (min-width:701px){.hero-inset{width:27cqw;height:27cqw;left:50%;bottom:110px}}
 @media(max-width:700px){.hero-inset{width:47cqw;height:47cqw;left:2%;bottom:68px}}
-
