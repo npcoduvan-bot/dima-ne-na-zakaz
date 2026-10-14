@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141512">
+  <title>НЕ НА ЗАКАЗ — фотографии Димы</title>
+  <meta name="description" content="Личный визуальный архив Димы. Я так вижу мир. Услуг нет. Лучше посмотрите фотографии.">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/geologica.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="style.css?v=11">
+  <script src="photos.js?v=9" defer></script>
+  <script src="gallery-layout.js?v=9" defer></script>
+  <script src="app.js?v=9" defer></script>
+</head>
+<body>
+<a class="skip" href="#archive">Перейти к фотографиям</a>
+<header class="header">
+  <a class="brand" href="#top" aria-label="На главную"><span class="brand-mark" aria-hidden="true">↗</span> ДИМА / ФОТОГРАФИИ</a>
+  <nav aria-label="Главная навигация"><a href="#archive">Смотреть</a><a href="#about">Кто снимает</a><button type="button" id="open-services" aria-haspopup="dialog" aria-controls="services-dialog">Услуги</button><a href="#contacts">Контакты <span aria-hidden="true">↗</span></a></nav>
+</header>
+<main>
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="hero-eyebrow"><span class="status-dot"></span> ЛИЧНЫЙ ВИЗУАЛЬНЫЙ АРХИВ <span class="edition">ВЫПУСК 001 / 2026</span></div>
+  <div class="hero-stage">
+    <div class="hero-copy"><h1 id="hero-title">НЕ НА<br><span>ЗАКАЗ</span><span class="title-star" aria-hidden="true">*</span></h1><a class="hero-note" href="#archive"><span class="hero-note-text"><strong>Я так вижу мир</strong><span>(своеобразный вкус к фотографии)</span></span><span class="hero-note-arrow" aria-hidden="true">↘</span></a></div>
+    <figure class="hero-photo"><button class="photo-open" data-photo="64" aria-label="Открыть фотографию: яхта в бирюзовом море"><img src="assets/header-yacht.webp" alt="Яхта в бирюзовом море" width="1600" height="3426" fetchpriority="high"></button><figcaption><span>№ 065</span><span>Вокруг</span></figcaption></figure>
+    <figure class="hero-inset"><button class="photo-open" data-photo="44" aria-label="Открыть фотографию: чёрный кот"><img src="assets/header-cat.webp" alt="Бирюзовый глаз чёрного кота крупным планом" width="1100" height="2355"></button><figcaption>Этот тоже не заказывал</figcaption></figure>
+    <div class="hero-sticker">* КОММЕРЧЕСКИЕ<br>АМБИЦИИ ОТСУТСТВУЮТ</div>
+  </div>
+  <div class="hero-bottom"><span>ПРЕДМЕТЫ. ТЕХНИКА. ЖИВОТНЫЕ. ВСЁ ОСТАЛЬНОЕ.</span><a href="#archive" aria-label="Перейти в архив">Листайте <span aria-hidden="true">↓</span></a></div>
+</section>
+<section class="archive section" id="archive" aria-labelledby="archive-title">
+  <div class="section-label"><span>01 / ФОТОГРАФИИ</span><span>МОЙ СПОСОБ СМОТРЕТЬ</span></div>
+  <div class="section-heading"><h2 id="archive-title" tabindex="-1">НУ, ВОТ<br><span class="muted">ФОТКИ.</span></h2><div class="archive-intro"><p>Без единой темы и обязательной истории.<br>Просто кадры, к которым хочется вернуться.</p><button type="button" class="random-button" data-random-photo>Мне повезёт <span aria-hidden="true">↗</span></button></div></div>
+  <div class="archive-toolbar"><div class="filters" role="group" aria-label="Фильтр фотографий"><button class="active" data-filter="all" aria-pressed="true">Всё подряд</button><button data-filter="ride" aria-pressed="false">То, что едет</button><button data-filter="life" aria-pressed="false">То, что живёт</button><button data-filter="around" aria-pressed="false">То, что вокруг</button><button data-filter="detail" aria-pressed="false">Детали</button></div><span id="photo-count" aria-live="polite"></span></div>
+  <div class="gallery" id="gallery"></div>
+  <div class="archive-more"><button id="more" class="outline-button">Ещё фотографии <span aria-hidden="true">↗</span></button><p id="archive-status" tabindex="-1">Сначала — небольшая подборка.</p></div>
+  <noscript><p>Для фильтров и просмотра фотографий включите JavaScript. Кадры первого экрана доступны выше.</p></noscript>
+</section>
+<section class="interlude" aria-label="Авторская заметка"><div class="interlude-image"><button class="photo-open" data-photo="60" aria-label="Открыть фотографию: бельгийская овчарка"><img src="assets/photo-60.jpg" alt="Бельгийская овчарка малинуа у серой стены" loading="lazy" width="941" height="1671"></button></div><div class="interlude-copy"><span class="small-label">ПРИМЕЧАНИЕ К КАДРУ</span><p>Вот такую красавицу случайно в городе встретил<span class="breed-note">(Бельгийская овчарка, она же Малинуа)</span></p><span class="interlude-star" aria-hidden="true">✳</span></div></section>
+<section class="about section" id="about" aria-labelledby="about-title"><div class="section-label"><span>02 / КТО СНИМАЕТ</span><span>БЕЗ ГЕРОИЧЕСКОЙ БИОГРАФИИ</span></div><div class="about-grid"><div class="about-name"><h2 id="about-title">МЕНЯ<br>ЗОВУТ<br><span class="accent">ДИМА.</span></h2><p class="name-note">*не Кузя</p></div><div class="about-chat" aria-label="Сообщения Димы из переписки"><span class="chat-author">Дима</span><ul class="chat-messages"><li class="chat-message"><p>Я никогда не собирался монетизировать фотографии)</p></li><li class="chat-message"><p>Для меня это просто отдушина)</p></li><li class="chat-message"><p>Которую я с детства люблю</p></li><li class="chat-message"><p>Но это либо пейзаж, либо предметка, либо живность</p></li></ul></div></div></section>
+<section class="contacts" id="contacts" aria-labelledby="contacts-title"><div class="section-label"><h2 id="contacts-title">03 / КОНТАКТЫ</h2><span>МОЖНО НАПИСАТЬ</span></div><a class="telegram-link" href="https://t.me/lost_ex3c" target="_blank" rel="noopener noreferrer">Telegram <span aria-hidden="true">↗</span></a><p>Но фотографировать вас я не буду</p></section>
+</main>
+<footer><a class="brand" href="#top">ДИМА / ФОТОГРАФИИ <span aria-hidden="true">↑</span></a><p>Все права защищены.<br>Коммерческие амбиции отсутствуют.</p><span>2026</span></footer>
+<dialog id="viewer" aria-labelledby="viewer-caption"><div class="viewer-top"><span id="viewer-number"></span><button id="close-viewer" aria-label="Закрыть фотографию">ЗАКРЫТЬ <span aria-hidden="true">×</span></button></div><div class="viewer-stage"><p id="viewer-status" role="status" aria-live="polite"></p><button class="viewer-arrow prev" id="prev-photo" aria-label="Предыдущая фотография">←</button><img id="viewer-image" alt=""><button class="viewer-arrow next" id="next-photo" aria-label="Следующая фотография">→</button></div><div class="viewer-bottom"><p id="viewer-caption"></p><button type="button" class="viewer-random" data-random-photo>Не впечатлило? Ещё раз</button><span>← → листать / ESC закрыть</span></div></dialog>
+<dialog id="services-dialog" class="services-dialog" aria-labelledby="services-title" aria-describedby="services-description">
+  <button type="button" class="services-close" id="close-services" aria-label="Закрыть окно услуг">×</button>
+  <span class="small-label">ВЫ СПРАШИВАЛИ ПРО УСЛУГИ</span>
+  <h2 id="services-title">УСЛУГ <span class="accent">НЕТ.</span></h2>
+  <p id="services-description">с людьми не работаю<br><span>лучше посмотрите фотографии</span></p>
+  <div class="services-actions"><button type="button" data-to-archive>Ясно</button><button type="button" data-to-archive>Понятно</button></div>
+</dialog>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{
+  "reservedDisplayNumbers": [
+    44,
+    49,
+    1,
+    54,
+    18,
+    34,
+    43,
+    53,
+    74,
+    189
+  ],
+  "nextDisplayNumber": 197,
+  "removed": [
+    {
+      "id": 0,
+      "displayNumber": 1,
+      "src": "assets/photo-00.jpg"
+    },
+    {
+      "id": 53,
+      "displayNumber": 54,
+      "src": "assets/photo-53.jpg"
+    },
+    {
+      "id": 17,
+      "displayNumber": 18,
+      "src": "assets/photo-17.jpg"
+    },
+    {
+      "id": 33,
+      "displayNumber": 34,
+      "src": "assets/photo-33.jpg"
+    },
+    {
+      "id": 42,
+      "displayNumber": 43,
+      "src": "assets/photo-42.jpg"
+    },
+    {
+      "id": 52,
+      "displayNumber": 53,
+      "src": "assets/photo-52.jpg"
+    },
+    {
+      "id": 73,
+      "displayNumber": 74,
+      "src": "assets/photo-73.webp"
+    },
+    {
+      "id": 188,
+      "displayNumber": 189,
+      "src": "assets/photo-188.webp"
+    }
+  ]
+}
