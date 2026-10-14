@@ -96,9 +96,10 @@ h2{font-size:clamp(58px,6.7vw,104px)}
 .contacts h2{font:inherit;letter-spacing:inherit}
 .title-star{font-family:Geologica,Arial,sans-serif;font-size:.57em;margin-left:.06em;vertical-align:top;position:relative;top:.04em}
 .hero-stage{height:min(1040px,max(650px,calc(56vw + 20px)));min-height:0}
-.hero-photo{width:61.86%;height:auto;max-height:none;align-self:start;margin-right:1%;padding:8px}
-.hero-photo .photo-open,.hero-inset .photo-open{height:auto}
-.hero-photo img,.hero-inset img{width:100%;height:auto;object-fit:contain}
+.hero-photo{width:74%;height:auto;aspect-ratio:.64;max-height:none;align-self:start;margin-right:1%;padding:8px;display:flex;flex-direction:column}
+.hero-photo .photo-open{position:relative;flex:1 1 0;min-height:0;overflow:hidden;height:auto}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:57% 50%}
+.hero-inset .photo-open{height:auto}
 .hero-photo figcaption{height:34px;padding-top:13px}
 .hero-inset{width:19%;height:auto;max-height:none;left:57%;bottom:85px;padding:7px}
 .hero-inset figcaption{min-height:30px;padding:10px 0 5px;font-size:9px;line-height:1.3}
@@ -119,15 +120,15 @@ h2{font-size:clamp(58px,6.7vw,104px)}
 .gallery .photo-open:focus-visible{outline-offset:-3px}
 #viewer-status{position:absolute;max-width:80%;font-size:13px;line-height:1.5;text-align:center;color:var(--dim)}
 .viewer-random{min-height:44px}
-@media(max-width:1050px) and (min-width:701px){.hero-stage{height:650px}.hero-copy h1{font-size:10.1vw}.hero-photo{width:61.86%}.hero-inset{left:57%;bottom:110px;width:19%}.hero-note{gap:14px}.hero-note-text>span{font-size:11px}.hero-inset figcaption{font-size:8px}}
+@media(max-width:1050px) and (min-width:701px){.hero-stage{height:650px}.hero-copy h1{font-size:10.1vw}.hero-photo{width:82%}.hero-inset{left:50%;bottom:110px;width:27%}.hero-note{gap:14px}.hero-note-text>span{font-size:11px}.hero-inset figcaption{font-size:8px}}
 @media(max-width:700px){
  .hero-stage{height:auto;min-height:0;padding-bottom:78px}
  .hero-copy h1{font-size:clamp(58px,15.3vw,106px)}
  h2{font-size:clamp(44px,11.6vw,80px)}
  .hero-note{margin-top:20px;gap:18px}
  .hero-note-text strong{font-size:19px}.hero-note-text>span{font-size:10px;margin-left:5px}.hero-note>.hero-note-arrow{font-size:25px}
- .hero-photo{width:56%;margin:40px 0 0 40%;height:auto;max-height:none}
- .hero-inset{width:40%;height:auto;left:3%;bottom:106px;max-height:none}
+ .hero-photo{width:68%;margin:40px 0 0 29%;height:auto;max-height:none}
+ .hero-inset{width:47%;height:auto;left:2%;bottom:68px;max-height:none}
  .hero-inset figcaption{font-size:8px;min-height:30px}
  .hero-sticker{bottom:13px;right:1%;font-size:8px}
  .gallery .photo-print figcaption{min-height:43px;height:43px}
@@ -146,7 +147,9 @@ h2{font-size:clamp(58px,6.7vw,104px)}
 /* Explicit dimensions keep the entire rotated cat print square. The image
    is taken out of intrinsic sizing, then cropped within the print area. */
 .hero{container-type:inline-size}
-.hero-inset{width:19cqw;height:19cqw;aspect-ratio:auto}
+.hero-inset{width:24cqw;height:24cqw;aspect-ratio:auto;left:52%;bottom:80px}
 .hero-inset .photo-open{position:relative;flex:1 1 0;min-height:0;overflow:hidden}
 .hero-inset .photo-open img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:45% 43%}
-@media(max-width:700px){.hero-inset{width:40cqw;height:40cqw}}
+@media(max-width:1050px) and (min-width:701px){.hero-inset{width:27cqw;height:27cqw;left:50%;bottom:110px}}
+@media(max-width:700px){.hero-inset{width:47cqw;height:47cqw;left:2%;bottom:68px}}
+
